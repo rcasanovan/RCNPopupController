@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		069C235A809F443AF5524D6F18482515 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4D22CEE07D749A1F8A5079F942C35 /* ReplaceMe.swift */; };
 		1EB180BFDF5C0F47E841EA6A61CEF594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		28D9E8E865DD5CF0FB5AFFEF39D991BB /* Pods-RCNPopupController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3C517322FC733F7EF62BFAA1532F73 /* Pods-RCNPopupController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DCB670B615D9BBC5835C2BB939978BB /* Pods-RCNPopupController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B333A3619FCD39A290B15A309472F7A1 /* Pods-RCNPopupController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7987123273E834848319DA5502D45CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		7B6C069D8D61E1440DBAA4E8596CB059 /* Pods-RCNPopupController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD3011DE6005DFE86086766F4D8BFC /* Pods-RCNPopupController_Tests-dummy.m */; };
+		926312AE22D601160043002B /* RCNPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926312AC22D601110043002B /* RCNPopupController.swift */; };
+		926312B022D6012D0043002B /* RCNPopupTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926312AF22D6012D0043002B /* RCNPopupTheme.swift */; };
 		B4875F9F048D9D90CF9DE4FB724992A5 /* RCNPopupController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A94264801EBCDD1404A554C5AD54658F /* RCNPopupController-dummy.m */; };
 		CACAA5376BF7462C6D46F330D8B80794 /* RCNPopupController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4657CF22ECCFEF60479AF1C8F970AB74 /* RCNPopupController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D83590EBA10AB1116C265BC330075EDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -37,14 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A6C4ECCD319655B7D7F73700067692 /* Pods_RCNPopupController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RCNPopupController_Tests.framework; path = "Pods-RCNPopupController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A6C4ECCD319655B7D7F73700067692 /* Pods_RCNPopupController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCNPopupController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		025417DC8FC703EBEE66778D1A6B5C09 /* Pods-RCNPopupController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCNPopupController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C387F29890A366920F8D166D9A14995 /* RCNPopupController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCNPopupController-prefix.pch"; sourceTree = "<group>"; };
 		11A0EF24187743328F1D4F72D1466F94 /* RCNPopupController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RCNPopupController-Info.plist"; sourceTree = "<group>"; };
 		1A273572F6D630CBB35CE2E5058F5952 /* Pods-RCNPopupController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RCNPopupController_Example-dummy.m"; sourceTree = "<group>"; };
-		1B79A584E93FA73076BD410CD1836ACC /* RCNPopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RCNPopupController.framework; path = RCNPopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CCF6F2E863B287AFC07C770FE913618 /* RCNPopupController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RCNPopupController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3B829ED32843B1E53BD3C8CC51476578 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1B79A584E93FA73076BD410CD1836ACC /* RCNPopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RCNPopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCF6F2E863B287AFC07C770FE913618 /* RCNPopupController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RCNPopupController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B829ED32843B1E53BD3C8CC51476578 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4657CF22ECCFEF60479AF1C8F970AB74 /* RCNPopupController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCNPopupController-umbrella.h"; sourceTree = "<group>"; };
 		507F7B51286E16ABB712DE7D879AADD1 /* RCNPopupController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RCNPopupController.xcconfig; sourceTree = "<group>"; };
 		53FD3011DE6005DFE86086766F4D8BFC /* Pods-RCNPopupController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RCNPopupController_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -52,12 +53,14 @@
 		887E816F5A39A239BB04F18DE4E17EC0 /* Pods-RCNPopupController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C4E0C3F59402C3620F036A6F9879D9C /* Pods-RCNPopupController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCNPopupController_Example-Info.plist"; sourceTree = "<group>"; };
 		8EA11ABF82FFFA19B07A05100A6DC6D3 /* Pods-RCNPopupController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		926312AC22D601110043002B /* RCNPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNPopupController.swift; sourceTree = "<group>"; };
+		926312AF22D6012D0043002B /* RCNPopupTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNPopupTheme.swift; sourceTree = "<group>"; };
 		927EB989B760A38733B7BBE72C5C61B7 /* Pods-RCNPopupController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		92CC00982A9A81D69FE600A7AF2DE956 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9377427C99D362B27571F2E71696FB26 /* Pods_RCNPopupController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RCNPopupController_Example.framework; path = "Pods-RCNPopupController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CC00982A9A81D69FE600A7AF2DE956 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9377427C99D362B27571F2E71696FB26 /* Pods_RCNPopupController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCNPopupController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AFBC5F2A4B59A39F296A47019A0243 /* Pods-RCNPopupController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCNPopupController_Tests-Info.plist"; sourceTree = "<group>"; };
 		9A0331D1BF7AF9F1F95BEB54B8BE97E7 /* Pods-RCNPopupController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F1919898A4506034045DE813641EC47 /* RCNPopupController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RCNPopupController.modulemap; sourceTree = "<group>"; };
 		9F3C517322FC733F7EF62BFAA1532F73 /* Pods-RCNPopupController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RCNPopupController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A94264801EBCDD1404A554C5AD54658F /* RCNPopupController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCNPopupController-dummy.m"; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 		B333A3619FCD39A290B15A309472F7A1 /* Pods-RCNPopupController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RCNPopupController_Example-umbrella.h"; sourceTree = "<group>"; };
 		B3C801954FB0766CF92D5646D8369DBB /* Pods-RCNPopupController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCNPopupController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B5E7EE30E79D4AF7FDB917EE66291AE9 /* Pods-RCNPopupController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RCNPopupController_Tests.modulemap"; sourceTree = "<group>"; };
-		C6E4D22CEE07D749A1F8A5079F942C35 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = RCNPopupController/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FB77FF816DDEC2AE47B580EC1F431BD9 /* Pods-RCNPopupController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RCNPopupController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FED3406EBE0C37431B955F61C9E9CFF5 /* Pods-RCNPopupController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RCNPopupController_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -141,7 +143,8 @@
 		3EE65B47D9B0CFA9D887E4AA754B5EE2 /* RCNPopupController */ = {
 			isa = PBXGroup;
 			children = (
-				C6E4D22CEE07D749A1F8A5079F942C35 /* ReplaceMe.swift */,
+				926312AC22D601110043002B /* RCNPopupController.swift */,
+				926312AF22D6012D0043002B /* RCNPopupTheme.swift */,
 				AED8335A0C98267E3B25A1E2D2F5EEB9 /* Pod */,
 				17D59CFFFA4000928E98FE34B3B4EC2F /* Support Files */,
 			);
@@ -314,14 +317,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					37555C394924A416A055893D0A53E40B = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 501151FB4E64D3515586C1C9B3DFA1CC /* Products */;
@@ -364,8 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926312AE22D601160043002B /* RCNPopupController.swift in Sources */,
 				B4875F9F048D9D90CF9DE4FB724992A5 /* RCNPopupController-dummy.m in Sources */,
-				069C235A809F443AF5524D6F18482515 /* ReplaceMe.swift in Sources */,
+				926312B022D6012D0043002B /* RCNPopupTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +483,7 @@
 			baseConfigurationReference = 927EB989B760A38733B7BBE72C5C61B7 /* Pods-RCNPopupController_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -495,6 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -507,6 +519,7 @@
 			baseConfigurationReference = 9A0331D1BF7AF9F1F95BEB54B8BE97E7 /* Pods-RCNPopupController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -529,6 +542,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -539,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -668,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -717,8 +734,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
