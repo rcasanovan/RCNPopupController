@@ -1,9 +1,6 @@
 # RCNPopupController
 
-[![CI Status](https://img.shields.io/travis/Ricardo Casanova/RCNPopupController.svg?style=flat)](https://travis-ci.org/Ricardo Casanova/RCNPopupController)
-[![Version](https://img.shields.io/cocoapods/v/RCNPopupController.svg?style=flat)](https://cocoapods.org/pods/RCNPopupController)
-[![License](https://img.shields.io/cocoapods/l/RCNPopupController.svg?style=flat)](https://cocoapods.org/pods/RCNPopupController)
-[![Platform](https://img.shields.io/cocoapods/p/RCNPopupController.svg?style=flat)](https://cocoapods.org/pods/RCNPopupController)
+RCNPopupController is a simple Swift class to show a custom popup in a different ways with different effects. You can customise where the popup will appear and which effect you want to apply. The class is based on CNPPopupController.
 
 ## Example
 
