@@ -12,8 +12,8 @@
 		6DCB670B615D9BBC5835C2BB939978BB /* Pods-RCNPopupController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B333A3619FCD39A290B15A309472F7A1 /* Pods-RCNPopupController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7987123273E834848319DA5502D45CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		7B6C069D8D61E1440DBAA4E8596CB059 /* Pods-RCNPopupController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD3011DE6005DFE86086766F4D8BFC /* Pods-RCNPopupController_Tests-dummy.m */; };
-		926312AE22D601160043002B /* RCNPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926312AC22D601110043002B /* RCNPopupController.swift */; };
-		926312B022D6012D0043002B /* RCNPopupTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926312AF22D6012D0043002B /* RCNPopupTheme.swift */; };
+		926312B622D639B50043002B /* RCNPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926312B422D639B50043002B /* RCNPopupController.swift */; };
+		926312B722D639B50043002B /* RCNPopupTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926312B522D639B50043002B /* RCNPopupTheme.swift */; };
 		B4875F9F048D9D90CF9DE4FB724992A5 /* RCNPopupController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A94264801EBCDD1404A554C5AD54658F /* RCNPopupController-dummy.m */; };
 		CACAA5376BF7462C6D46F330D8B80794 /* RCNPopupController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4657CF22ECCFEF60479AF1C8F970AB74 /* RCNPopupController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D83590EBA10AB1116C265BC330075EDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -53,8 +53,8 @@
 		887E816F5A39A239BB04F18DE4E17EC0 /* Pods-RCNPopupController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C4E0C3F59402C3620F036A6F9879D9C /* Pods-RCNPopupController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCNPopupController_Example-Info.plist"; sourceTree = "<group>"; };
 		8EA11ABF82FFFA19B07A05100A6DC6D3 /* Pods-RCNPopupController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		926312AC22D601110043002B /* RCNPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNPopupController.swift; sourceTree = "<group>"; };
-		926312AF22D6012D0043002B /* RCNPopupTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNPopupTheme.swift; sourceTree = "<group>"; };
+		926312B422D639B50043002B /* RCNPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCNPopupController.swift; path = RCNPopupController/Classes/RCNPopupController.swift; sourceTree = "<group>"; };
+		926312B522D639B50043002B /* RCNPopupTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCNPopupTheme.swift; path = RCNPopupController/Classes/RCNPopupTheme.swift; sourceTree = "<group>"; };
 		927EB989B760A38733B7BBE72C5C61B7 /* Pods-RCNPopupController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCNPopupController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		92CC00982A9A81D69FE600A7AF2DE956 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9377427C99D362B27571F2E71696FB26 /* Pods_RCNPopupController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCNPopupController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,8 +143,8 @@
 		3EE65B47D9B0CFA9D887E4AA754B5EE2 /* RCNPopupController */ = {
 			isa = PBXGroup;
 			children = (
-				926312AC22D601110043002B /* RCNPopupController.swift */,
-				926312AF22D6012D0043002B /* RCNPopupTheme.swift */,
+				926312B422D639B50043002B /* RCNPopupController.swift */,
+				926312B522D639B50043002B /* RCNPopupTheme.swift */,
 				AED8335A0C98267E3B25A1E2D2F5EEB9 /* Pod */,
 				17D59CFFFA4000928E98FE34B3B4EC2F /* Support Files */,
 			);
@@ -373,9 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926312AE22D601160043002B /* RCNPopupController.swift in Sources */,
 				B4875F9F048D9D90CF9DE4FB724992A5 /* RCNPopupController-dummy.m in Sources */,
-				926312B022D6012D0043002B /* RCNPopupTheme.swift in Sources */,
+				926312B722D639B50043002B /* RCNPopupTheme.swift in Sources */,
+				926312B622D639B50043002B /* RCNPopupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
