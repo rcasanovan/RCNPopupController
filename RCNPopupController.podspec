@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
   s.summary          = 'A versatile Swift popup for iOS'
 
   s.description      = <<-DESC
-  RCNPopupController is a simple Swift class to show a custom popup in a different ways with different effects. You can customise where the popup will appear and which effect you want to apply. The class is based on CNPPopupController.
+  RCNPopupController is a simple Swift class to show a custom popup in a different ways with different effects. You can customise where the popup will appear and which effect you want to apply.
+  
+  The class is based on CNPPopupController.
                        DESC
 
   s.homepage         = 'https://github.com/rcasanovan/RCNPopupController'
