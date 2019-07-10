@@ -22,7 +22,7 @@ pod 'RCNPopupController'
 
 ## Author
 
-Ricardo Casanova, ricardo.casanova@gesundheitscloud.de
+Ricardo Casanova, ricardo.casanova@outlook.com
 
 ## License
 
