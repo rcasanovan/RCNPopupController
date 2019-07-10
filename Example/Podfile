@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RCNPopupController_Example' do
+  pod 'RCNPopupController', :path => '../'
+
+  target 'RCNPopupController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
