@@ -25,4 +25,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'RCNPopupController/Classes'
   s.frameworks = 'UIKit'
+  s.swift_version = '5.0'
 end
