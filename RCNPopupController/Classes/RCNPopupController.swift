@@ -41,7 +41,7 @@ public class RCNPopupController: NSObject {
         
         self.views = contents
         
-        self.popupView.backgroundColor = .white
+        self.popupView.backgroundColor = .red
         self.popupView.clipsToBounds = true
         
         if let applicationWindow = self.applicationWindow {
@@ -64,18 +64,8 @@ public class RCNPopupController: NSObject {
         
         addPopupContents()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
-        //            [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-        //            [[NSNotificationCenter defaultCenter] addObserver:self
-        //                selector:@selector(orientationWillChange)
-        //                name:UIApplicationWillChangeStatusBarOrientationNotification
-        //                object:nil];
-        //            [[NSNotificationCenter defaultCenter] addObserver:self
-        //                selector:@selector(orientationChanged)
-        //                name:UIApplicationDidChangeStatusBarOrientationNotification
-        //                object:nil];
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     public func presentAnimated(_ animated: Bool) {
@@ -130,12 +120,28 @@ extension RCNPopupController {
         }
     }
     
-    @objc private func keyboardWillShow() {
-        
+    @objc private func keyboardWillShow(_ notification: NSNotification) {
+        if theme.movesAboveKeyboard {
+            guard let keyboardFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue, let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval, let curve = notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? UIViewAnimationCurve else { return }
+            
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let frame = popupView.convert(keyboardRectangle, from: nil)
+            let options = UIViewAnimationOptions(rawValue: UInt(UIViewAnimationCurve(rawValue: curve.rawValue)!.rawValue))
+
+            keyboardWithEndFrame(frame, duration: duration, options: options)
+        }
     }
     
-    @objc private func keyboardWillHide() {
-        
+    @objc private func keyboardWillHide(_ notification: NSNotification) {
+        if theme.movesAboveKeyboard {
+            guard let keyboardFrame = notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue, let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval, let curve = notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? UIViewAnimationCurve else { return }
+            
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let frame = popupView.convert(keyboardRectangle, from: nil)
+            let options = UIViewAnimationOptions(rawValue: UInt(UIViewAnimationCurve(rawValue: curve.rawValue)!.rawValue))
+            
+            keyboardWithStartFrame(frame, duration: duration, options: options)
+        }
     }
     
 }
@@ -276,6 +282,22 @@ extension RCNPopupController {
         return dismissed
     }
     
+    private func keyboardWithEndFrame(_ keyboardFrame: CGRect, duration: TimeInterval, options: UIViewAnimationOptions) {
+        let popupViewIntersection: CGRect = popupView.frame.intersection(keyboardFrame)
+        
+        if popupViewIntersection.size.height > 0.0 {
+            let maskViewIntersection: CGRect = maskView.frame.intersection(keyboardFrame)
+            UIView.animate(withDuration: duration, delay: 0.0, options: options, animations: {
+                self.popupView.center = CGPoint(x: self.popupView.center.x, y: (self.maskView.frame.height - maskViewIntersection.size.height) / 2.0)
+            })
+        }
+    }
+
+    private func keyboardWithStartFrame(_ keyboardFrame: CGRect, duration: TimeInterval, options: UIViewAnimationOptions) {
+        UIView.animate(withDuration: duration, delay: 0.0, options: options, animations: {
+            self.popupView.center = self.endingPoint()
+        })
+    }
 }
 
 extension RCNPopupController: UIGestureRecognizerDelegate {
