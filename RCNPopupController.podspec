@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Ricardo Casanova/RCNPopupController'
+  s.homepage         = 'https://github.com/rcasanovan/RCNPopupController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ricardo Casanova' => 'ricardo.casanova@gesundheitscloud.de' }
-  s.source           = { :git => 'https://github.com/Ricardo Casanova/RCNPopupController.git', :tag => s.version.to_s }
+  s.author           = { 'Ricardo Casanova' => 'rcasanova@pijp.co' }
+  s.source           = { :git => 'https://github.com/rcasanovan/RCNPopupController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

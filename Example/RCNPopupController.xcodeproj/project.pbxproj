@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A0B06342EB77D7E8289FA33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3534015E25ECBC0F8F8FA579 /* RCNPopupController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RCNPopupController.podspec; path = ../RCNPopupController.podspec; sourceTree = "<group>"; };
+		0A0B06342EB77D7E8289FA33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3534015E25ECBC0F8F8FA579 /* RCNPopupController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RCNPopupController.podspec; path = ../RCNPopupController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		457D98387EA882D4A83A9833 /* Pods-RCNPopupController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCNPopupController_Example.debug.xcconfig"; path = "Target Support Files/Pods-RCNPopupController_Example/Pods-RCNPopupController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4F60E239F0B028EB38916D7A /* Pods-RCNPopupController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCNPopupController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RCNPopupController_Tests/Pods-RCNPopupController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8037DA59E68F787881E14C /* Pods-RCNPopupController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCNPopupController_Example.release.xcconfig"; path = "Target Support Files/Pods-RCNPopupController_Example/Pods-RCNPopupController_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* RCNPopupController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCNPopupController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7298879E38C2148F91825C90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7298879E38C2148F91825C90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AA86B9327273B7AED3C071DD /* Pods_RCNPopupController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCNPopupController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF590ECAE3B95536AD659433 /* Pods_RCNPopupController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCNPopupController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27C01E9D0AB392C839B32B0 /* Pods-RCNPopupController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCNPopupController_Tests.release.xcconfig"; path = "Target Support Files/Pods-RCNPopupController_Tests/Pods-RCNPopupController_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 				4F60E239F0B028EB38916D7A /* Pods-RCNPopupController_Tests.debug.xcconfig */,
 				F27C01E9D0AB392C839B32B0 /* Pods-RCNPopupController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
