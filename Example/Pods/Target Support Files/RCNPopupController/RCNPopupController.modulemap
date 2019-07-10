@@ -1,0 +1,6 @@
+framework module RCNPopupController {
+  umbrella header "RCNPopupController-umbrella.h"
+
+  export *
+  module * { export * }
+}

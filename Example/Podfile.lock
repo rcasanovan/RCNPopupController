@@ -1,0 +1,16 @@
+PODS:
+  - RCNPopupController (0.1.0)
+
+DEPENDENCIES:
+  - RCNPopupController (from `../`)
+
+EXTERNAL SOURCES:
+  RCNPopupController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RCNPopupController: 4025da799f7d5cdd0da140547fc6485b3262fd3a
+
+PODFILE CHECKSUM: 31ee7bb69842d280a8c25bf288f9c5f365e76b94
+
+COCOAPODS: 1.6.1
