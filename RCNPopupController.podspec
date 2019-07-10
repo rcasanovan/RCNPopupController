@@ -8,35 +8,19 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RCNPopupController'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RCNPopupController.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'A versatile Swift popup for iOS'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  RCNPopupController is a simple Swift class to show a custom popup in a different ways with different effects. You can customise where the popup will appear and which effect you want to apply. The class is based on CNPPopupController.
                        DESC
 
   s.homepage         = 'https://github.com/rcasanovan/RCNPopupController'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ricardo Casanova' => 'rcasanova@pijp.co' }
+  s.author           = 'Ricardo Casanova'
   s.source           = { :git => 'https://github.com/rcasanovan/RCNPopupController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.social_media_url = 'https://twitter.com/rcasanonvan'
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'RCNPopupController/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'RCNPopupController' => ['RCNPopupController/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'RCNPopupController/Classes'
+  s.frameworks = 'UIKit'
 end
