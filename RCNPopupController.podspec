@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'RCNPopupController'
-  spec.version          = '1.0.2'
+  spec.version          = '1.0.3'
   spec.summary          = 'A versatile Swift popup for iOS'
 
   spec.description      = <<-DESC
