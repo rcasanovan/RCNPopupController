@@ -64,8 +64,8 @@ public class RCNPopupController: NSObject {
         
         addPopupContents()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     public func presentAnimated(_ animated: Bool) {
@@ -122,7 +122,7 @@ extension RCNPopupController {
     
     @objc private func keyboardWillShow(_ notification: NSNotification) {
         if theme.movesAboveKeyboard {
-            guard let keyboardFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue, let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval, let curve = notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? UIView.AnimationCurve else { return }
+            guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue, let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval, let curve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UIView.AnimationCurve else { return }
             
             let keyboardRectangle = keyboardFrame.cgRectValue
             let frame = popupView.convert(keyboardRectangle, from: nil)
@@ -134,7 +134,7 @@ extension RCNPopupController {
     
     @objc private func keyboardWillHide(_ notification: NSNotification) {
         if theme.movesAboveKeyboard {
-            guard let keyboardFrame = notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue, let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval, let curve = notification.userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? UIView.AnimationCurve else { return }
+            guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue, let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval, let curve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UIView.AnimationCurve else { return }
             
             let keyboardRectangle = keyboardFrame.cgRectValue
             let frame = popupView.convert(keyboardRectangle, from: nil)
