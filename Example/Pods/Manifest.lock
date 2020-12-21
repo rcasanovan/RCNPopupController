@@ -1,5 +1,5 @@
 PODS:
-  - RCNPopupController (1.0.4)
+  - RCNPopupController (1.0.5)
 
 DEPENDENCIES:
   - RCNPopupController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RCNPopupController: 989d6ae04899f7f01d23159ec482f62527c69b63
+  RCNPopupController: d9b5e3e482cf453ffe80294b70197cf5bf5995b6
 
 PODFILE CHECKSUM: 31ee7bb69842d280a8c25bf288f9c5f365e76b94
 
