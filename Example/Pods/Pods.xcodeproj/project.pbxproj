@@ -478,7 +478,7 @@
 			};
 			name = Debug;
 		};
-		46C0F586DD0CA9BE65E5887CB5F59835 /* Release */ = {
+		188FD9936D8AC5EEF7A1C24875790F98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B95DF0E42E9E71D25EB6707187058D6 /* RCNPopupController.release.xcconfig */;
 			buildSettings = {
@@ -496,7 +496,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RCNPopupController/RCNPopupController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RCNPopupController/RCNPopupController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RCNPopupController/RCNPopupController.modulemap";
 				PRODUCT_MODULE_NAME = RCNPopupController;
@@ -583,6 +583,39 @@
 			};
 			name = Debug;
 		};
+		932B55FCC24B431AF955F2A8895E43B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACE310B963E14E32688107337E11987 /* RCNPopupController.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RCNPopupController/RCNPopupController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RCNPopupController/RCNPopupController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RCNPopupController/RCNPopupController.modulemap";
+				PRODUCT_MODULE_NAME = RCNPopupController;
+				PRODUCT_NAME = RCNPopupController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B90E43025B22061ED9918955FCAB58A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BDD8C81650BA97941D7B5D169766DD0B /* Pods-RCNPopupController_Example.release.xcconfig */;
@@ -618,39 +651,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		D27D26058B9600C59997CF1FC76C3249 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EACE310B963E14E32688107337E11987 /* RCNPopupController.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RCNPopupController/RCNPopupController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RCNPopupController/RCNPopupController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RCNPopupController/RCNPopupController.modulemap";
-				PRODUCT_MODULE_NAME = RCNPopupController;
-				PRODUCT_NAME = RCNPopupController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		EFE5E2F1B021E8EEA166C87E5A8D8C9C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -780,8 +780,8 @@
 		BAC4D43D53EBAC499213931549AB7C5E /* Build configuration list for PBXNativeTarget "RCNPopupController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D27D26058B9600C59997CF1FC76C3249 /* Debug */,
-				46C0F586DD0CA9BE65E5887CB5F59835 /* Release */,
+				932B55FCC24B431AF955F2A8895E43B9 /* Debug */,
+				188FD9936D8AC5EEF7A1C24875790F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
