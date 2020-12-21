@@ -41,11 +41,14 @@ public class RCNPopupController: NSObject {
         
         self.views = contents
         
-        self.popupView.backgroundColor = .red
+        self.popupView.backgroundColor = .clear
         self.popupView.clipsToBounds = true
         
         if let applicationWindow = self.applicationWindow {
             self.maskView.frame = applicationWindow.bounds
+            applicationWindow.addSubview(maskView)
+            applicationWindow.addConstraintsWithFormat("H:|[v0]|", views: maskView)
+            applicationWindow.addConstraintsWithFormat("V:|[v0]|", views: maskView)
         }
         self.maskView.backgroundColor = UIColor.white.withAlphaComponent(0.7)
         self.backgroundTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped))
@@ -61,6 +64,7 @@ public class RCNPopupController: NSObject {
         }
         
         self.maskView.addSubview(self.popupView)
+        self.maskView.alignAllCenteredSubview(self.popupView)
         
         addPopupContents()
         
@@ -216,7 +220,10 @@ extension RCNPopupController {
             }
         }
         
-        popupView.frame = CGRect(x: 0.0, y: 0.0, width: result.width, height: result.height)
+        if let applicationWindow = self.applicationWindow {
+            applicationWindow.addConstraintsWithFormat("H:[v0(\(result.width))]", views: popupView)
+            applicationWindow.addConstraintsWithFormat("V:[v0(\(result.height))]", views: popupView)
+        }
         
         return result
     }
