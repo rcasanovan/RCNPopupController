@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'RCNPopupController'
-  spec.version          = '1.0.4'
+  spec.version          = '1.0.5'
   spec.summary          = 'A versatile Swift popup for iOS'
 
   spec.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.homepage               = 'https://github.com/rcasanovan/RCNPopupController'
   spec.license                = { :type => 'MIT', :file => 'LICENSE' }
   spec.author                 = { "Ricardo Casanova" => "ricardo.casanova@outlook.com" }
-  spec.ios.deployment_target  = '9.3'
+  spec.ios.deployment_target  = '10.0'
   spec.swift_version          = '5.0'
   spec.source                 = { :git => "https://github.com/rcasanovan/RCNPopupController.git", :tag => "#{spec.version}" }
   spec.source_files           = "RCNPopupController/**/*.{h,m,swift}"
